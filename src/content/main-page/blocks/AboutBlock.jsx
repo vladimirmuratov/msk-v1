@@ -20,6 +20,9 @@ export const AboutBlock = () => {
                     транспортировки
                     пациентов в ведущие клиники Москвы в круглосуточном режиме.
                 </Typography>
+                <Typography sx={{fontSize: '20px', color: 'var(--green)', marginTop: '15px'}}>
+                    Наша компания работает на базе ФГБУ "Объединенная больница с поликлиникой" Управления Делами Президента РФ.
+                </Typography>
             </Box>
             <Box sx={{
                 display: 'grid',
