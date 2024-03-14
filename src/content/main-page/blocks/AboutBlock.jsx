@@ -27,7 +27,7 @@ export const AboutBlock = () => {
             <Box sx={{
                 display: 'grid',
                 gridTemplateColumns: {xs: '1fr', sm: '1fr 1fr'},
-                marginY: {xs: '50px', sm: '100px'},
+                marginY: {xs: '15px', sm: '100px'},
                 position: 'relative'
             }}>
                 <Typography sx={{fontSize: '20px', color: 'var(--green)'}}>
