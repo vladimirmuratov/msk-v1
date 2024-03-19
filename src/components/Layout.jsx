@@ -12,13 +12,13 @@ export const Layout = ({children}) => {
 
     const toggleDrawer = (open) => (event) => {
         if (event.type === 'Escape' && (event.key === 'Tab')) {
-            setOpen(false);
+            setOpen(false)
         }
         setOpen(open)
-    };
+    }
 
     return (
-        <Box className='container'>
+        <Box className="container">
             <TemporaryDrawer anchor={anchor} toggleDrawer={toggleDrawer} isOpen={isOpen} router={router}/>
             <Header toggleDrawer={toggleDrawer} router={router}/>
             {children}

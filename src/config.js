@@ -4,6 +4,7 @@ import SupportAgentOutlinedIcon from '@mui/icons-material/SupportAgentOutlined'
 import MapOutlinedIcon from '@mui/icons-material/MapOutlined'
 
 export const phoneNumber = '+7 499 719 81 00'
+export const email = 'moscowsc.post@yandex.ru'
 
 export const links = [
     {id: 1, label: 'Главная', path: '/', Icon: HomeOutlinedIcon},

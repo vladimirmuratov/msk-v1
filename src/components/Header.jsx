@@ -64,12 +64,14 @@ export const Header = ({toggleDrawer, router}) => {
                     display: 'flex',
                     justifyContent: 'center',
                     alignItems: 'center',
-                    maxWidth: '942px',
+                    // maxWidth: '942px',
+                    maxWidth: position === 'fixed' ? '1140px' : '942px',
                     height: '60px',
                     margin: '0 auto',
                 }}>
                 {(position === 'fixed' || windowWidth < 600) && (
-                    <Box onClick={() => router.push('/')} sx={{display: {xs: 'block'}, position: 'absolute', left: 20, cursor: 'pointer'}}>
+                    <Box onClick={() => router.push('/')}
+                         sx={{display: {xs: 'block'}, position: 'absolute', left: 20, cursor: 'pointer'}}>
                         <img src="/images/logo.png" alt="logo" style={{width: '80px'}}/>
                     </Box>
                 )}
@@ -83,7 +85,10 @@ export const Header = ({toggleDrawer, router}) => {
                         <Link key={link.id} href={link.path}><Typography>{link.label}</Typography></Link>
                     ))}
                 </Box>
-                <MenuIcon onClick={toggleDrawer(true)} sx={{display: {xs: 'block', sm: 'none'}, position: 'absolute', right: 20}}/>
+                <MenuIcon
+                    onClick={toggleDrawer(true)}
+                    sx={{display: {xs: 'block', sm: 'none'}, position: 'absolute', right: 20}}
+                />
             </Box>
         </Box>
     )
