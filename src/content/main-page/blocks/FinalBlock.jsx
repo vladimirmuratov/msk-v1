@@ -1,0 +1,24 @@
+import {Box, Typography} from '@mui/material'
+import {phoneNumber} from '@/config'
+
+export const FinalBlock = () => {
+    return (
+        <Box
+            component="section"
+            sx={{
+                backgroundColor: 'var(--green)',
+                padding: {xs: '20px', sm: '67px'},
+                marginY: {xs: '25px', sm: '50px'}
+            }}>
+            <Typography
+                sx={{fontSize: 20, color: 'var(--white)', lineHeight: 1.3, marginBottom: '10px'}}>
+                Мы работаем ежедневно и круглосуточно, без выходных и праздников. Вы можете получить консультацию
+                специалиста по телефону: <span style={{color: 'var(--red)', fontWeight: 500, textWrap: 'nowrap'}}>{phoneNumber}</span>
+            </Typography>
+            <Typography
+                sx={{fontSize: 20, color: 'var(--white)', lineHeight: 1.3}}>
+                Мы постараемся ответить Вам максимально оперативно!
+            </Typography>
+        </Box>
+    )
+}

@@ -10,7 +10,6 @@ export const ServiceBlock = () => {
             sx={{
                 scrollMarginTop: '100px',
                 padding: {xs: '20px', sm: '50px 65px 50px'},
-                marginTop: {xs: '50px', sm: '0'}
             }}
         >
             <Typography

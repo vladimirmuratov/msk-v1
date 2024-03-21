@@ -11,7 +11,7 @@ export const ContactsBlock = () => {
             id="contact"
             sx={{
                 scrollMarginTop: '100px',
-                padding: {xs: '20px', sm: '0 65px 50px'},
+                padding: {xs: '25px', sm: '50px 65px 100px'},
             }}
         >
             <Typography sx={{fontSize: '32px', fontWeight: 500, color: 'var(--black)', marginBottom: '20px'}}>
