@@ -52,6 +52,7 @@ export const MainPageContent = () => {
         }
 
     }, [])
+
     return (
         <Box>
             <Banner router={router} isMobile={isMobile}/>

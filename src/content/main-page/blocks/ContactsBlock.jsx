@@ -2,7 +2,7 @@ import {Box, Link, Typography} from '@mui/material'
 import {email, phoneNumber} from '@/config'
 import MapOutlinedIcon from '@mui/icons-material/MapOutlined'
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined'
-import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import AlternateEmailIcon from '@mui/icons-material/AlternateEmail'
 
 export const ContactsBlock = () => {
     return (

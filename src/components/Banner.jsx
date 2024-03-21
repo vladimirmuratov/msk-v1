@@ -1,4 +1,4 @@
-import {Box, Button, Link, Typography} from '@mui/material'
+import {Box, Button, Typography} from '@mui/material'
 import {phoneNumber} from '@/config'
 
 export const Banner = ({router, isMobile}) => {
