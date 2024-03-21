@@ -6,7 +6,7 @@ export default function handler(req, res) {
     const message = {
         from: process.env.ADDRESS_FROM,
         to: [process.env.ADDRESS_TO_1, process.env.ADDRESS_TO_2, process.env.ADDRESS_TO_3],
-        subject: `Поступила заявка на звонок: ${new Date().toLocaleString()}`,
+        subject: `Поступила заявка на звонок: ${new Date().toLocaleString('ru-RU')}`,
         html: ` <p>Имя: ${req.body.person}</p>
                 <p>Дата рождения: ${req.body.dateBirth ?? 'Нет'}</p>
                 <p>Телефон: ${req.body.phone}</p>
