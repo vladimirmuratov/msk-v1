@@ -1,12 +1,13 @@
 import {TextField, Typography} from '@mui/material'
 import {useController} from 'react-hook-form'
 
-export const BaseInput = ({control, name, label, required = false, multiline = false, errorType = ''}) => {
+export const BaseInput = ({control, name, label, required = false, multiline = false, errorType = '', mask = ''}) => {
     const {field,} = useController({name, control, rules: {required: required},})
 
     return (
         <>
             <TextField
+                placeholder={mask}
                 error={!!errorType}
                 onChange={field.onChange}
                 name={field.name}

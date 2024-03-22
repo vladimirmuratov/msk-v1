@@ -29,11 +29,11 @@ export const MessageForm = ({handleClose, onSendForm}) => {
             sx={{display: 'flex', flexDirection: 'column', gap: '10px'}}
         >
 
-            <BaseInput control={control} label="Ваше имя" name="person" required={true} errorType={errors?.person?.type}/>
-            <BaseInput control={control} label="Дата рождения" name="dateBirth"/>
-            <BaseInput control={control} label="Телефон" name="phone" required={true} errorType={errors?.phone?.type}/>
-            <BaseInput control={control} label="Email" name="email"/>
-            <BaseInput control={control} label="Доп.информация" name="info" multiline={true}/>
+            <BaseInput control={control} label="Ваше имя" name="person" required={true} errorType={errors?.person?.type} mask='Смирнов Иван'/>
+            <BaseInput control={control} label="Дата рождения" name="dateBirth" mask='01.01.1980'/>
+            <BaseInput control={control} label="Телефон" name="phone" required={true} errorType={errors?.phone?.type} mask='+7 000 000 00 00'/>
+            <BaseInput control={control} label="Email" name="email" mask='smirnov@mail.ru'/>
+            <BaseInput control={control} label="Доп.информация" name="info" multiline={true} mask='Опишите ситуацию'/>
 
             <Box sx={{display: 'flex'}}>
                 <Checkbox checked={checked} onChange={handleChange} sx={{alignSelf: 'start'}}/>
