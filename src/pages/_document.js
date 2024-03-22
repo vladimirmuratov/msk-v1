@@ -8,9 +8,6 @@ export default function Document(props) {
     return (
         <Html lang="en">
             <Head>
-                {/*УДАЛИТЬ ПРИ PRODUCTION!!!*/}
-                <meta name="robots" content="noindex,nofollow" key="robots"/>
-                {/*-----------------------*/}
                 <DocumentHeadTags {...props} />
             </Head>
             <body>
