@@ -1,4 +1,4 @@
-import {Box, Typography} from '@mui/material'
+import {Box, Link, Typography} from '@mui/material'
 import {phoneNumber} from '@/config'
 
 export const FinalBlock = () => {
@@ -13,7 +13,14 @@ export const FinalBlock = () => {
             <Typography
                 sx={{fontSize: 20, color: 'var(--white)', lineHeight: 1.3, marginBottom: '10px'}}>
                 Мы работаем ежедневно и круглосуточно, без выходных и праздников. Вы можете получить консультацию
-                специалиста по телефону: <span style={{color: 'var(--red)', fontWeight: 500, textWrap: 'nowrap'}}>{phoneNumber}</span>
+                специалиста по телефону:&nbsp;
+                <Link href={`tel:${phoneNumber}`}
+                      sx={{
+                          color: 'var(--red)',
+                          fontWeight: 500,
+                          textWrap: 'nowrap',
+                          textDecorationColor: 'var(--red)'
+                      }}>{phoneNumber}</Link>
             </Typography>
             <Typography
                 sx={{fontSize: 20, color: 'var(--white)', lineHeight: 1.3}}>
