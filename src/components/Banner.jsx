@@ -6,7 +6,9 @@ export const Banner = ({router, isMobile}) => {
     return (
         <Box
             sx={{
-                backgroundImage: 'url(/images/banner.png)',
+                backgroundImage: 'url(/images/banner-2.png)',
+                backgroundPosition: 'center',
+                backgroundSize: 'cover',
                 height: '488px',
                 transform: 'translateY(-32px)',
                 display: 'flex',
