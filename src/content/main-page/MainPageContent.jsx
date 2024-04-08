@@ -8,7 +8,7 @@ import {ContactsBlock} from '@/content/main-page/blocks/ContactsBlock'
 import {useRouter} from 'next/router'
 import {useEffect, useState} from 'react'
 import {FloatBtn} from '@/components/FloatBtn'
-import {Modal} from '@/components/Modal'
+import {BaseModal} from '@/components/base/BaseModal'
 import {MessageForm} from '@/components/MessageForm'
 import DialogContentText from '@mui/material/DialogContentText'
 import {timeOut} from '@/config'
@@ -17,32 +17,9 @@ import {FinalBlock} from '@/content/main-page/blocks/FinalBlock'
 export const MainPageContent = () => {
     const router = useRouter()
     const [isMobile, setMobile] = useState(false)
-    const [open, setOpen] = useState(false)
-    const [sendForm, setSendForm] = useState(false)
-
-    useEffect(() => {
-        let timeout
-        if (sendForm) {
-            timeout = setTimeout(() => {
-                handleCloseSuccessMessage()
-            }, timeOut)
-        }
-        return () => {
-            clearTimeout(timeout)
-        }
-    }, [sendForm])
-
-    const handleClickOpen = () => {
-        setOpen(true)
-    }
-
-    const handleClose = () => {
-        setOpen(false)
-    }
-
-    const handleCloseSuccessMessage = () => {
-        setSendForm(false)
-    }
+    const [isOpenForm, setOpenForm] = useState(false)
+    const [success, setSuccess] = useState(false)
+    const [failed, setFailed] = useState(false)
 
     useEffect(() => {
         const os = navigator.userAgentData.platform
@@ -53,6 +30,32 @@ export const MainPageContent = () => {
 
     }, [])
 
+    useEffect(() => {
+        let timeout
+
+        if (success || failed) {
+            timeout = setTimeout(() => {
+                handleCloseAnswerMessage()
+            }, timeOut)
+        }
+        return () => {
+            clearTimeout(timeout)
+        }
+    }, [success, failed])
+
+    const handleOpenForm = () => {
+        setOpenForm(true)
+    }
+
+    const handleCloseForm = () => {
+        setOpenForm(false)
+    }
+
+    const handleCloseAnswerMessage = () => {
+        setSuccess(false)
+        setFailed(false)
+    }
+
     return (
         <Box>
             <Banner router={router} isMobile={isMobile}/>
@@ -62,18 +65,28 @@ export const MainPageContent = () => {
             <ServiceBlock/>
             <FinalBlock/>
             <ContactsBlock/>
-            <FloatBtn handleOpen={handleClickOpen}/>
+            <FloatBtn handleOpen={handleOpenForm}/>
 
-            <Modal open={open} handleClose={handleClose} title="Связаться с нами">
-                <MessageForm handleClose={handleClose} onSendForm={setSendForm}/>
-            </Modal>
+            <BaseModal open={isOpenForm} handleClose={handleCloseForm} title="Связаться с нами">
+                <MessageForm handleClose={handleCloseForm} onSuccess={setSuccess} onFailed={setFailed}/>
+            </BaseModal>
 
-            {sendForm && (
-                <Modal title="Сообщение отправлено!" open={sendForm} handleClose={handleCloseSuccessMessage}>
+            {success && (
+                <BaseModal title="Сообщение отправлено!" open={success} handleClose={handleCloseAnswerMessage}
+                           color="var(--green)">
                     <DialogContentText id="alert-dialog-description">
                         Скоро в Вами свяжется наш специалист
                     </DialogContentText>
-                </Modal>
+                </BaseModal>
+            )}
+
+            {failed && (
+                <BaseModal title="Ошибка сервера!" open={failed} handleClose={handleCloseAnswerMessage}
+                           color="var(--red)">
+                    <DialogContentText id="alert-dialog-description">
+                        Попробуйте позже
+                    </DialogContentText>
+                </BaseModal>
             )}
         </Box>
     )

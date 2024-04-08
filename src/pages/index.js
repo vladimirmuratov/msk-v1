@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import {MainPageContent} from '@/content/main-page/MainPageContent'
+import {Suspense} from 'react'
 
 
 export default function Home() {
@@ -13,7 +14,9 @@ export default function Home() {
                 <link rel="icon" href="/icon.png"/>
             </Head>
             <main>
-                <MainPageContent/>
+                <Suspense>
+                    <MainPageContent/>
+                </Suspense>
             </main>
         </>
     )

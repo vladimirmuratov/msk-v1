@@ -6,7 +6,7 @@ export const Footer = () => {
         <Box
             component="footer"
             sx={{
-                backgroundColor: 'var(--black)',
+                backgroundColor: 'var(--green)',
                 display: 'flex',
                 flexDirection: {xs: 'column', sm: 'row'},
                 justifyContent: 'space-between',

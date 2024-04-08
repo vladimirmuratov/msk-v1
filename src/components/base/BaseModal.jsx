@@ -9,7 +9,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />
 })
 
-export const Modal = ({title = '', children, open, handleClose}) => {
+export const BaseModal = ({title = '', children, open, handleClose, color = ''}) => {
 
 
     return (
@@ -22,7 +22,7 @@ export const Modal = ({title = '', children, open, handleClose}) => {
                 onClose={handleClose}
                 aria-describedby='alert-dialog-slide-description'
             >
-                <DialogTitle>{title}</DialogTitle>
+                <DialogTitle sx={{color: color}}>{title}</DialogTitle>
                 <DialogContent>
                     <Box id='alert-dialog-slide-description' sx={{paddingTop: '10px'}}>
                         {children}
