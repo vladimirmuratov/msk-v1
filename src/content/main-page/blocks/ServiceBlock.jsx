@@ -13,6 +13,7 @@ export const ServiceBlock = () => {
             }}
         >
             <Typography
+                variant="h4"
                 sx={{fontSize: '32px', fontWeight: 500, color: 'var(--black)', marginBottom: '20px', lineHeight: 1.3}}>
                 Что мы предлагаем
             </Typography>

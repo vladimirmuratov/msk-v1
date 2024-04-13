@@ -11,8 +11,11 @@ import {FloatBtn} from '@/components/FloatBtn'
 import {BaseModal} from '@/components/base/BaseModal'
 import {MessageForm} from '@/components/MessageForm'
 import DialogContentText from '@mui/material/DialogContentText'
-import {timeOut} from '@/config'
+import {faq, timeOut} from '@/config'
 import {FinalBlock} from '@/content/main-page/blocks/FinalBlock'
+import {WhyWeBlock} from '@/components/WhyWeBlock'
+import {WeRespondBlock} from '@/components/WeRespondBlock'
+import {BaseAccordion} from '@/components/base/Accordion/BaseAccordion'
 
 export const MainPageContent = () => {
     const router = useRouter()
@@ -61,8 +64,11 @@ export const MainPageContent = () => {
             <Banner router={router} isMobile={isMobile}/>
             <BannerCardsBlock/>
             <AboutBlock/>
+            <WhyWeBlock/>
             <GreenBlock/>
+            <WeRespondBlock/>
             <ServiceBlock/>
+            <BaseAccordion id='faq' title='Частые вопросы' items={faq}/>
             <FinalBlock/>
             <ContactsBlock/>
             <FloatBtn handleOpen={handleOpenForm}/>
