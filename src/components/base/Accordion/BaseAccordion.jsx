@@ -9,7 +9,6 @@ export const BaseAccordion = ({id = '', title, items = []}) => {
             sx={{
                 scrollMarginTop: '150px',
                 padding: {xs: '18px 20px 20px', sm: '50px 65px'},
-                marginTop: {xs: '200px', sm: '0'}
             }}
         >
             <Typography variant="h4" sx={{fontSize: '32px', fontWeight: 500, color: 'var(--black)', marginBottom: '20px'}}>{title}</Typography>
