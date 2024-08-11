@@ -12,7 +12,7 @@ export default function handler(req, res) {
                 <p>Телефон: ${req.body.phone}</p>
                 <p>Email: ${req.body.email ?? 'Нет'}</p>
                 <p>Информация: ${req.body.info ?? 'Нет'}</p>
-                <p>Сообщение пришло с сайта: msk-ambulance.ru</p>`,
+                <p>Сообщение пришло с сайта: msk-group-hospital.ru</p>`,
     }
 
     let transporter = nodemailer.createTransport({
@@ -44,7 +44,7 @@ export default function handler(req, res) {
         const message2 = {
             from: process.env.ADDRESS_FROM,
             to: [req.body.email],
-            subject: `Вы оставили заявку на звонок на сайте msk-ambulance.ru ${new Date().toLocaleString('ru-RU', {timeZone: 'Europe/Moscow'})}`,
+            subject: `Вы оставили заявку на звонок на сайте msk-group-hospital.ru ${new Date().toLocaleString('ru-RU', {timeZone: 'Europe/Moscow'})}`,
             html: ` <p>Имя: ${req.body.person}</p>
                     <p>Дата рождения: ${req.body.dateBirth ?? 'Нет'}</p>
                     <p>Телефон: ${req.body.phone}</p>
