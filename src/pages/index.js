@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import {MainPageContent} from '@/content/main-page/MainPageContent'
 import {Suspense} from 'react'
+import {Metrika} from '@/Metrika'
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
             <main>
                 <Suspense>
                     <MainPageContent/>
+                    <Metrika/>
                 </Suspense>
             </main>
         </>
