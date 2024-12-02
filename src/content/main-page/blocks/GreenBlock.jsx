@@ -14,7 +14,7 @@ export const GreenBlock = () => {
                 padding: {xs: '20px', sm: '67px'},
                 marginY: {xs: '25px', sm: '50px'}
             }}>
-            <Avatar src="/images/doctors/doctor4.png" alt="pic" sx={{width: '150px', height: '150px'}}/>
+            <Avatar src="/images/doctors/doctor4.png" alt="платная госпитализация тяжелобольных" sx={{width: '150px', height: '150px'}}/>
             <Typography
                 sx={{
                     fontSize: {xs: '24px', sm: '32px'},

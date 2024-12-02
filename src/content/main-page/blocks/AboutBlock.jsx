@@ -35,11 +35,11 @@ export const AboutBlock = () => {
                     и безошибочные решения.
                 </Typography>
                 <Box sx={{display: {xs: 'none', sm: 'block'}}}>
-                    <img src="/images/doctors/doctor3.png" alt="pic"
+                    <img src="/images/doctors/doctor3.png" alt="платная госпитализация в москве хирургия"
                          style={{height: '150px', position: 'absolute', right: '3%', top: '70px'}}/>
-                    <img src="/images/doctors/doctor2.png" alt="pic"
+                    <img src="/images/doctors/doctor2.png" alt="платная травматология москва"
                          style={{height: '150px', position: 'absolute', right: '5%', top: '-70px'}}/>
-                    <img src="/images/doctors/doctor1.png" alt="pic"
+                    <img src="/images/doctors/doctor1.png" alt="кардиология платная госпитализация"
                          style={{height: '150px', position: 'absolute', right: '15%', top: '-20px'}}/>
                 </Box>
             </Box>
