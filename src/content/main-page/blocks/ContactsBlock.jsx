@@ -14,7 +14,7 @@ export const ContactsBlock = () => {
                 padding: {xs: '25px', sm: '50px 65px 100px'},
             }}
         >
-            <Typography variant="h4" sx={{fontSize: '32px', fontWeight: 500, color: 'var(--black)', marginBottom: '20px'}}>
+            <Typography variant="h2" sx={{fontSize: '32px', fontWeight: 500, color: 'var(--black)', marginBottom: '20px'}}>
                 Контакты
             </Typography>
             <Box sx={{display: 'grid', gridTemplateColumns: {xs: '1fr', sm: '1fr 1fr'}, gap: {xs: '10px', sm: 0}}}>

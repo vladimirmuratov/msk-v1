@@ -17,6 +17,7 @@ export const Banner = ({router, isMobile}) => {
                 gap: '10px'
             }}>
             <Typography
+                variant='h1'
                 sx={{
                     fontSize: {xs: '24px', sm: '38px', md: '62px'},
                     textTransform: 'uppercase',
@@ -24,8 +25,9 @@ export const Banner = ({router, isMobile}) => {
                     color: 'var(--green)',
                     textShadow: ' 1px 1px 2px white',
                     textAlign: 'center',
-                }}>добро пожаловать в мск</Typography>
+                }}>платная госпитализация</Typography>
             <Typography
+                variant='h2'
                 sx={{
                     fontSize: {xs: '12px', sm: '18px', md: '24px'},
                     fontWeight: 500,

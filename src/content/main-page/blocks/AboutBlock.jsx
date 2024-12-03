@@ -12,7 +12,7 @@ export const AboutBlock = () => {
             }}
         >
             <Box>
-                <Typography variant="h4" sx={{fontSize: '32px', fontWeight: 500, color: 'var(--black)', marginBottom: '20px'}}>
+                <Typography variant="h2" sx={{fontSize: '32px', fontWeight: 500, color: 'var(--black)', marginBottom: '20px'}}>
                     О нас
                 </Typography>
                 <Typography sx={{fontSize: '20px', color: 'var(--green)'}}>

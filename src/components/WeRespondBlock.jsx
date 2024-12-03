@@ -10,30 +10,30 @@ export const WeRespondBlock = () => {
             }}
         >
 
-            <Typography variant="h4" sx={{fontSize: '32px', fontWeight: 500, color: 'var(--black)', marginBottom: '20px'}}>
+            <Typography variant="h2" sx={{fontSize: '32px', fontWeight: 500, color: 'var(--black)', marginBottom: '20px'}}>
                 Мы отвечаем за:
             </Typography>
 
             <Box sx={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px'}}>
                 <CheckIcon sx={{color: 'var(--green)'}}/>
-                <Typography component="p" sx={{fontSize: 20, fontWeight: 500}}>Оптимальный выбор клиники</Typography>
+                <Typography variant="h3" sx={{fontSize: 20, fontWeight: 500}}>Оптимальный выбор клиники</Typography>
             </Box>
             <Box sx={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px'}}>
                 <CheckIcon sx={{color: 'var(--green)'}}/>
-                <Typography component="p" sx={{fontSize: 20, fontWeight: 500}}>Экспертный контроль качества и стоимости
+                <Typography variant="h3" sx={{fontSize: 20, fontWeight: 500}}>Экспертный контроль качества и стоимости
                     лечения</Typography>
             </Box>
             <Box sx={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px'}}>
                 <CheckIcon sx={{color: 'var(--green)'}}/>
-                <Typography component="p" sx={{fontSize: 20, fontWeight: 500}}>Врачебное сопровождение</Typography>
+                <Typography variant="h3" sx={{fontSize: 20, fontWeight: 500}}>Врачебное сопровождение</Typography>
             </Box>
             <Box sx={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px'}}>
                 <CheckIcon sx={{color: 'var(--green)'}}/>
-                <Typography component="p" sx={{fontSize: 20, fontWeight: 500}}>Комплексный подход</Typography>
+                <Typography variant="h3" sx={{fontSize: 20, fontWeight: 500}}>Комплексный подход</Typography>
             </Box>
             <Box sx={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px'}}>
                 <CheckIcon sx={{color: 'var(--green)'}}/>
-                <Typography component="p" sx={{fontSize: 20, fontWeight: 500}}>Юридическую поддержку</Typography>
+                <Typography variant="h3" sx={{fontSize: 20, fontWeight: 500}}>Юридическую поддержку</Typography>
             </Box>
         </Box>
     )

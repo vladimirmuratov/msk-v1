@@ -18,14 +18,14 @@ export const links = [
 ]
 
 export const serviceBlockItems = [
-    {id: 1, src: '/icons/24_7_1_1x.png', label: 'Платная плановая госпитализация - на связи 27/7'},
-    {id: 2, src: '/icons/Resurs_2_1x.png', label: 'Экстренная платная госпитализация'},
-    {id: 3, src: '/icons/bez_polisa_1x.png', label: 'Платная госпитализация без полиса ОМС'},
-    {id: 4, src: '/icons/regiony_1x.png', label: 'Платная госпитализация из регионов'},
-    {id: 5, src: '/icons/perevod_1x.png', label: 'Перевод пациента из одной больницы в другую'},
-    {id: 6, src: '/icons/vedomstvennye_1x.png', label: 'Госпитализация в медицинские учреждения'},
-    {id: 7, src: '/icons/tyazhelye_1x.png', label: 'Работа с тяжелыми пациентами'},
-    {id: 8, src: '/icons/patronazh_1x.png', label: 'Собственная патронажная служба'},
+    {id: 1, src: '/icons/24_7_1_1x.png', label: 'Платная плановая госпитализация - на связи 27/7', alt: 'платная госпитализация'},
+    {id: 2, src: '/icons/Resurs_2_1x.png', label: 'Экстренная платная госпитализация', alt: 'экстренная госпитализация'},
+    {id: 3, src: '/icons/bez_polisa_1x.png', label: 'Платная госпитализация без полиса ОМС', alt: 'госпитализация без полиса омс'},
+    {id: 4, src: '/icons/regiony_1x.png', label: 'Платная госпитализация из регионов', alt: 'платная госпитализация москва'},
+    {id: 5, src: '/icons/perevod_1x.png', label: 'Перевод пациента из одной больницы в другую', alt: 'пациент перевод'},
+    {id: 6, src: '/icons/vedomstvennye_1x.png', label: 'Госпитализация в медицинские учреждения', alt: 'платная палата'},
+    {id: 7, src: '/icons/tyazhelye_1x.png', label: 'Работа с тяжелыми пациентами', alt: 'экстренная госпитализация пациента в стационар'},
+    {id: 8, src: '/icons/patronazh_1x.png', label: 'Собственная патронажная служба', alt: 'патронажная служба'},
 ]
 
 export const faq = [
