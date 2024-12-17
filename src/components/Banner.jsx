@@ -22,10 +22,10 @@ export const Banner = ({router, isMobile}) => {
                     fontSize: {xs: '24px', sm: '38px', md: '62px'},
                     textTransform: 'uppercase',
                     fontWeight: 500,
-                    color: 'var(--green)',
+                    color: 'var(--red)',
                     textShadow: ' 1px 1px 2px white',
                     textAlign: 'center',
-                }}>платная госпитализация</Typography>
+                }}>платная госпитализация в Москве</Typography>
             <Typography
                 variant='h2'
                 sx={{
@@ -34,6 +34,7 @@ export const Banner = ({router, isMobile}) => {
                     color: 'var(--white)',
                     textAlign: 'center',
                     textShadow: ' 1px 1px 2px gray',
+                    textTransform: 'uppercase',
                 }}>
                 ПОМОЩЬ В ОРГАНИЗАЦИИ ПЛАТНОЙ ГОСПИТАЛИЗАЦИИ
             </Typography>
