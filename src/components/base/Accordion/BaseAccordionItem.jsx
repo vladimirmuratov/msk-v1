@@ -12,7 +12,7 @@ export const BaseAccordionItem = ({id, question, answer}) => {
             >
                 <Typography sx={{fontWeight: 500, fontSize: 18}}>{question}</Typography>
             </AccordionSummary>
-            <AccordionDetails sx={{backgroundColor: 'var(--green)'}}>
+            <AccordionDetails sx={{backgroundColor: 'var(--blue)'}}>
                 <Typography sx={{fontSize: 18, lineHeight: 1.5, color: '#fff', whiteSpace: 'pre-wrap'}}>{answer}</Typography>
             </AccordionDetails>
         </Accordion>

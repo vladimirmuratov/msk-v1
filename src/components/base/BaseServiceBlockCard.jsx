@@ -8,7 +8,7 @@ export const BaseServiceBlockCard = ({src, label, alt}) => {
             alignItems: 'center',
             gap: {xs: '10px', sm: '16px'},
             padding: {xs: '20px', lg: '65px 32px'},
-            border: '2px solid var(--green)',
+            border: '2px solid var(--blue)',
             borderRadius: '16px',
             minHeight: '116px'
         }}>

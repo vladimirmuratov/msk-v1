@@ -6,7 +6,7 @@ export const WeRespondBlock = () => {
         <Box
             sx={{
                 scrollMarginTop: '150px',
-                padding: {xs: '18px 20px 20px', sm: '18px 65px 50px'},
+                padding: {xs: '18px 20px 20px', sm: '18px 30px 50px'},
             }}
         >
 
@@ -15,24 +15,24 @@ export const WeRespondBlock = () => {
             </Typography>
 
             <Box sx={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px'}}>
-                <CheckIcon sx={{color: 'var(--green)'}}/>
+                <CheckIcon sx={{color: 'var(--blue)'}}/>
                 <Typography variant="h3" sx={{fontSize: 20, fontWeight: 500}}>Оптимальный выбор клиники</Typography>
             </Box>
             <Box sx={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px'}}>
-                <CheckIcon sx={{color: 'var(--green)'}}/>
+                <CheckIcon sx={{color: 'var(--blue)'}}/>
                 <Typography variant="h3" sx={{fontSize: 20, fontWeight: 500}}>Экспертный контроль качества и стоимости
                     лечения</Typography>
             </Box>
             <Box sx={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px'}}>
-                <CheckIcon sx={{color: 'var(--green)'}}/>
+                <CheckIcon sx={{color: 'var(--blue)'}}/>
                 <Typography variant="h3" sx={{fontSize: 20, fontWeight: 500}}>Врачебное сопровождение</Typography>
             </Box>
             <Box sx={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px'}}>
-                <CheckIcon sx={{color: 'var(--green)'}}/>
+                <CheckIcon sx={{color: 'var(--blue)'}}/>
                 <Typography variant="h3" sx={{fontSize: 20, fontWeight: 500}}>Комплексный подход</Typography>
             </Box>
             <Box sx={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px'}}>
-                <CheckIcon sx={{color: 'var(--green)'}}/>
+                <CheckIcon sx={{color: 'var(--blue)'}}/>
                 <Typography variant="h3" sx={{fontSize: 20, fontWeight: 500}}>Юридическую поддержку</Typography>
             </Box>
         </Box>

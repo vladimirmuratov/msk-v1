@@ -1,32 +1,56 @@
-import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined'
-import EmojiPeopleOutlinedIcon from '@mui/icons-material/EmojiPeopleOutlined'
-import SupportAgentOutlinedIcon from '@mui/icons-material/SupportAgentOutlined'
-import MapOutlinedIcon from '@mui/icons-material/MapOutlined'
-import LiveHelpOutlinedIcon from '@mui/icons-material/LiveHelpOutlined'
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import EmojiPeopleOutlinedIcon from '@mui/icons-material/EmojiPeopleOutlined';
+import SupportAgentOutlinedIcon from '@mui/icons-material/SupportAgentOutlined';
+import MapOutlinedIcon from '@mui/icons-material/MapOutlined';
+import LiveHelpOutlinedIcon from '@mui/icons-material/LiveHelpOutlined';
 
-export const phoneNumber = '+7 499 719 81 00'
-export const email = 'moscowsc.post@yandex.ru'
+export const phoneNumber = '+7 499 719 81 00';
+export const email = 'moscowsc.post@yandex.ru';
 
-export const timeOut = 3000
+export const phoneWhatsApp = '+79268158505';
+export const phoneTelegram = '+79268158505';
+export const phoneViber = '79268158505';
+
+export const timeOut = 3000;
 
 export const links = [
-    {id: 1, label: 'Главная', path: '/', Icon: HomeOutlinedIcon},
-    {id: 2, label: 'О нас', path: '#about', Icon: EmojiPeopleOutlinedIcon},
-    {id: 3, label: 'Что мы предлагаем', path: '#service', Icon: SupportAgentOutlinedIcon},
-    {id: 4, label: 'Частые вопросы', path: '#faq', Icon: LiveHelpOutlinedIcon},
-    {id: 5, label: 'Контакты', path: '#contact', Icon: MapOutlinedIcon},
-]
+    { id: 1, label: 'Главная', path: '#root', Icon: HomeOutlinedIcon },
+    { id: 2, label: 'О нас', path: '#about', Icon: EmojiPeopleOutlinedIcon },
+    { id: 3, label: 'Что мы предлагаем', path: '#service', Icon: SupportAgentOutlinedIcon },
+    { id: 4, label: 'Частые вопросы', path: '#faq', Icon: LiveHelpOutlinedIcon },
+    { id: 5, label: 'Контакты', path: '#contact', Icon: MapOutlinedIcon },
+];
 
 export const serviceBlockItems = [
-    {id: 1, src: '/icons/24_7_1_1x.png', label: 'Платная плановая госпитализация - на связи 27/7', alt: 'платная госпитализация'},
-    {id: 2, src: '/icons/Resurs_2_1x.png', label: 'Экстренная платная госпитализация', alt: 'экстренная госпитализация'},
-    {id: 3, src: '/icons/bez_polisa_1x.png', label: 'Платная госпитализация без полиса ОМС', alt: 'госпитализация без полиса омс'},
-    {id: 4, src: '/icons/regiony_1x.png', label: 'Платная госпитализация из регионов', alt: 'платная госпитализация москва'},
-    {id: 5, src: '/icons/perevod_1x.png', label: 'Перевод пациента из одной больницы в другую', alt: 'пациент перевод'},
-    {id: 6, src: '/icons/vedomstvennye_1x.png', label: 'Госпитализация в медицинские учреждения', alt: 'платная палата'},
-    {id: 7, src: '/icons/tyazhelye_1x.png', label: 'Работа с тяжелыми пациентами', alt: 'экстренная госпитализация пациента в стационар'},
-    {id: 8, src: '/icons/patronazh_1x.png', label: 'Собственная патронажная служба', alt: 'патронажная служба'},
-]
+    {
+        id: 1,
+        src: '/icons-blue/1.svg',
+        label: 'Платная плановая госпитализация - на связи 27/7',
+        alt: 'платная госпитализация'
+    },
+    { id: 2, src: '/icons-blue/2.svg', label: 'Экстренная платная госпитализация', alt: 'экстренная госпитализация' },
+    {
+        id: 3,
+        src: '/icons-blue/3.svg',
+        label: 'Платная госпитализация без полиса ОМС',
+        alt: 'госпитализация без полиса омс'
+    },
+    {
+        id: 4,
+        src: '/icons-blue/4.svg',
+        label: 'Платная госпитализация из регионов',
+        alt: 'платная госпитализация москва'
+    },
+    { id: 5, src: '/icons-blue/5.svg', label: 'Перевод пациента из одной больницы в другую', alt: 'пациент перевод' },
+    { id: 6, src: '/icons-blue/6.svg', label: 'Госпитализация в медицинские учреждения', alt: 'платная палата' },
+    {
+        id: 7,
+        src: '/icons-blue/7.svg',
+        label: 'Работа с тяжелыми пациентами',
+        alt: 'экстренная госпитализация пациента в стационар'
+    },
+    { id: 8, src: '/icons-blue/8.svg', label: 'Собственная патронажная служба', alt: 'патронажная служба' },
+];
 
 export const faq = [
     {
@@ -79,4 +103,4 @@ export const faq = [
         question: 'В течение какого времени за женой приедет машина? Мы живем за МКАДом',
         answer: 'Назовите удобное для Вас время, и мы организуем транспортировку из любого региона в любую московскую клинику'
     },
-]
+];

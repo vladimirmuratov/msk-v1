@@ -1,12 +1,14 @@
-import {Box, Button, Typography} from '@mui/material'
-import {phoneNumber} from '@/config'
+import { Box, Button, Typography } from '@mui/material';
+import { phoneNumber } from '@/config';
 
-export const Banner = ({router, isMobile}) => {
+export const Banner = ({ router, isMobile }) => {
 
     return (
         <Box
+            id="root"
             sx={{
-                backgroundImage: 'url(/images/banner-2.png)',
+                scrollMarginTop: '200px',
+                backgroundImage: 'url(/images/banner-3.jpg)',
                 backgroundPosition: 'center',
                 backgroundSize: 'cover',
                 height: '488px',
@@ -14,26 +16,27 @@ export const Banner = ({router, isMobile}) => {
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'center',
-                gap: '10px'
+                gap: '10px',
+                paddingLeft: { xs: '10px', sm: '30px' }
             }}>
             <Typography
-                variant='h1'
+                variant="h1"
                 sx={{
-                    fontSize: {xs: '24px', sm: '38px', md: '62px'},
+                    fontSize: { xs: '24px', sm: '38px', md: '62px' },
                     textTransform: 'uppercase',
                     fontWeight: 500,
                     color: 'var(--red)',
                     textShadow: ' 1px 1px 2px white',
-                    textAlign: 'center',
-                }}>платная госпитализация в Москве</Typography>
+                    textAlign: 'left',
+                }}>платная<br />госпитализация<br />в Москве</Typography>
             <Typography
-                variant='h2'
+                variant="h2"
                 sx={{
-                    fontSize: {xs: '12px', sm: '18px', md: '24px'},
+                    fontSize: { xs: '12px', sm: '18px', md: '24px' },
                     fontWeight: 500,
-                    color: 'var(--white)',
-                    textAlign: 'center',
-                    textShadow: ' 1px 1px 2px gray',
+                    color: 'var(--blue)',
+                    textAlign: 'left',
+                    textShadow: ' 1px 1px 2px white',
                     textTransform: 'uppercase',
                 }}>
                 ПОМОЩЬ В ОРГАНИЗАЦИИ ПЛАТНОЙ ГОСПИТАЛИЗАЦИИ
@@ -41,8 +44,8 @@ export const Banner = ({router, isMobile}) => {
             <Typography
                 sx={{
                     color: 'var(--red)',
-                    textAlign: 'center',
-                    fontSize: {xs: '24px', sm: '38px', md: '48px'},
+                    textAlign: 'left',
+                    fontSize: { xs: '24px', sm: '38px', md: '48px' },
                     fontWeight: 500
                 }}>
                 {phoneNumber}
@@ -51,10 +54,13 @@ export const Banner = ({router, isMobile}) => {
                 onClick={() => router.push(`tel:${phoneNumber}`)}
                 variant="contained"
                 color="error"
-                sx={{alignSelf: 'center', display: isMobile ? 'block' : 'none'}}
+                sx={{
+                    // alignSelf: 'center',
+                    display: isMobile ? 'block' : 'none'
+                }}
             >
                 Позвонить
             </Button>
         </Box>
-    )
-}
+    );
+};

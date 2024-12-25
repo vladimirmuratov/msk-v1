@@ -6,8 +6,8 @@ export const FinalBlock = () => {
         <Box
             component="section"
             sx={{
-                backgroundColor: 'var(--green)',
-                padding: {xs: '20px', sm: '67px'},
+                backgroundColor: 'var(--blue)',
+                padding: {xs: '20px', sm: '30px'},
                 marginY: {xs: '25px', sm: '50px'}
             }}>
             <Typography

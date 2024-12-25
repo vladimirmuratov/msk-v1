@@ -3,16 +3,16 @@ import {Box, Typography} from '@mui/material'
 export const BannerCardsBlock = () => {
     return (
         <Box sx={{height: '200px', display: 'flex', flexDirection: {xs: 'column', sm: 'row'}, transform: 'translateY(-32px)'}}>
-            <Box className='bannerCard' sx={{backgroundColor: '#32A4AA'}}>
+            <Box className='bannerCard' sx={{backgroundColor: 'var(--blue)'}}>
                 <Typography variant='h2'>Экстренная госпитализация</Typography>
             </Box>
-            <Box className='bannerCard' sx={{backgroundColor: '#2CAEB4'}}>
+            <Box className='bannerCard' sx={{backgroundColor: '#368aff'}}>
                 <Typography variant='h2'>Госпитализация без полиса ОМС</Typography>
             </Box>
-            <Box className='bannerCard' sx={{backgroundColor: '#35B7BC'}}>
+            <Box className='bannerCard' sx={{backgroundColor: '#4c97ff'}}>
                 <Typography variant='h2'>Работа с тяжелыми пациентами</Typography>
             </Box>
-            <Box className='bannerCard' sx={{backgroundColor: '#3FC1C7'}}>
+            <Box className='bannerCard' sx={{backgroundColor: '#62a4ff'}}>
                 <Typography variant='h2'>Собственная патронажная служба</Typography>
             </Box>
         </Box>
