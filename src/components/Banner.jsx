@@ -55,7 +55,7 @@ export const Banner = ({ router, isMobile }) => {
                 variant="contained"
                 color="error"
                 sx={{
-                    // alignSelf: 'center',
+                    alignSelf: 'start',
                     display: isMobile ? 'block' : 'none'
                 }}
             >
