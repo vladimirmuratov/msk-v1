@@ -10,7 +10,7 @@ export const BannerCardsBlock = () => {
                 <Typography variant='h2'>Госпитализация без полиса ОМС</Typography>
             </Box>
             <Box className='bannerCard' sx={{backgroundColor: '#4c97ff'}}>
-                <Typography variant='h2'>Работа с тяжелыми пациентами</Typography>
+                <Typography variant='h2'>Перевод из одной больницы в другую</Typography>
             </Box>
             <Box className='bannerCard' sx={{backgroundColor: '#62a4ff'}}>
                 <Typography variant='h2'>Собственная патронажная служба</Typography>

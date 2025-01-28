@@ -45,7 +45,7 @@ export const AboutBlock = () => {
                     медицинского обслуживания. С нами вы получите качественную помощь без очередей и лишнего стресса.
                 </Typography>
                 <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-                    <img src="/images/doctors/doctor5-color.jpg" alt="платная госпитализация в москве хирургия"
+                    <img src="/images/doctors/doctor5-color.jpg" alt="госпитализация с платной скорой"
                          style={{ width: '100%' }}
                     />
                 </Box>

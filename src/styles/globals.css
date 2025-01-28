@@ -43,6 +43,7 @@ a {
     font-weight: 500;
     color: var(--white);
     text-align: center;
+    text-wrap: balance;
 }
 
 @media (max-width: 900px) {
