@@ -18,7 +18,6 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="yandex-verification" content="bbac592db0eece12" />
-        <link rel="canonical" href="https://msk-ambulance.ru/" />
         {/*<link rel="icon" href="/icon.png"/>*/}
         <link rel="shortcut icon" href="/favicon.ico" type="image/ico" />
       </Head>
