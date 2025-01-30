@@ -28,7 +28,13 @@ export const Banner = ({ router, isMobile }) => {
                     color: 'var(--red)',
                     textShadow: ' 1px 1px 2px white',
                     textAlign: 'left',
-                }}>платная<br />госпитализация<br />в Москве</Typography>
+                }}>
+                платная
+                <br />
+                госпитализация
+                {/*<br />*/}
+                {/*в Москве*/}
+            </Typography>
             <Typography
                 variant="h2"
                 sx={{
