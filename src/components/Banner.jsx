@@ -57,6 +57,7 @@ export const Banner = ({ router, isMobile }) => {
                 {phoneNumber}
             </Typography>
             <Button
+                className='animation-btn'
                 onClick={() => router.push(`tel:${phoneNumber}`)}
                 variant="contained"
                 color="error"
