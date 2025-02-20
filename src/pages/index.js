@@ -20,6 +20,9 @@ export default function Home() {
         <meta name="yandex-verification" content="bbac592db0eece12" />
         {/*<link rel="icon" href="/icon.png"/>*/}
         <link rel="shortcut icon" href="/favicon.ico" type="image/ico" />
+          <meta property="og:title" content="Лечение в лучших клиниках Москвы. 8 (499) 719-81-00, 24/7" />
+          <meta property="og:description" content="Официальный координатор по госпитализации в московские клиники. Более 10 лет успешной работы. 20 клиник-партнеров. Оперативность. Минимум документов. Финансовая прозрачность" />
+          <meta property="og:image" content="/images/banner-3.jpg" />
       </Head>
       <main>
         <Suspense>
