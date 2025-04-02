@@ -10,7 +10,7 @@ export const WhyWeBlock = () => {
         >
 
             <Typography variant="h2"
-                        sx={{ fontSize: '32px', fontWeight: 500, color: 'var(--black)', marginBottom: '20px' }}>
+                        sx={{ fontSize: '32px', fontWeight: 500, color: 'var(--red)', marginBottom: '20px' }}>
                 Почему именно мы?
             </Typography>
 

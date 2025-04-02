@@ -13,11 +13,12 @@ export const AboutBlock = () => {
         >
             <Box>
                 <Typography variant="h2"
-                            sx={{ fontSize: '32px', fontWeight: 500, color: 'var(--black)', marginBottom: '20px' }}>
+                            sx={{ fontSize: '32px', fontWeight: 500, color: 'var(--red)', marginBottom: '20px' }}>
                     О нас
                 </Typography>
                 <Typography sx={{ fontSize: '20px', color: 'var(--gray)' }}>
-                    <Box component="span" sx={{ fontWeight: 600, color: 'var(--blue)', }}>МСК-госпитализация</Box> берет
+                    <Box component="span" sx={{ fontWeight: 600, color: 'var(--blue)', }}>Медицинская Сервисная
+                        Компания</Box> берет
                     на себя ответственность в организации экстренной и плановой госпитализации
                     в передовые медицинские учреждения столицы, гарантируя для своих клиентов оперативный доступ к
                     лучшим практикам и комфорту. Осознавая критическую роль своевременного обращения за профессиональной
@@ -33,18 +34,37 @@ export const AboutBlock = () => {
                 </Typography>
             </Box>
             <Box sx={{
-                display: 'grid',
+                // backgroundColor: 'var(--blue)',
+                display: {xs: 'flex', md: 'grid'},
                 gridTemplateColumns: { xs: '1fr', sm: '1fr 1fr' },
                 marginY: { xs: '15px', sm: '100px' },
                 alignItems: 'center',
             }}>
-                <Typography
-                    variant="h3"
-                    sx={{ fontSize: '26px', fontWeight: 500, color: 'var(--black)', lineHeight: 1.5 }}>
-                    Мы стремимся обеспечить комфорт и спокойствие наших клиентов, предоставляя только лучшее в области
-                    медицинского обслуживания. С нами вы получите качественную помощь без очередей и лишнего стресса.
-                </Typography>
-                <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+                <Box sx={{
+                    backgroundColor: 'var(--blue)',
+                    height: '100%',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    padding: '30px',
+                    width: '100%',
+                }}>
+                    <Typography
+                        variant="h3"
+                        sx={{
+                            fontSize: '20px',
+                            fontWeight: 500,
+                            color: 'var(--white)',
+                            backgroundColor: 'var(--blue)',
+                            lineHeight: 1.5
+                        }}>
+                        Мы стремимся обеспечить комфорт и спокойствие наших клиентов, предоставляя только лучшее в
+                        области
+                        медицинского обслуживания. С нами вы получите качественную помощь без очередей и лишнего
+                        стресса.
+                    </Typography>
+                </Box>
+                <Box sx={{ display: { xs: 'none', md: 'block' } }}>
                     <img src="/images/doctors/doctor5-color.jpg" alt="госпитализация с платной скорой"
                          style={{ width: '100%' }}
                     />

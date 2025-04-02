@@ -10,7 +10,7 @@ export const WeRespondBlock = () => {
             }}
         >
 
-            <Typography variant="h2" sx={{fontSize: '32px', fontWeight: 500, color: 'var(--black)', marginBottom: '20px'}}>
+            <Typography variant="h2" sx={{fontSize: '32px', fontWeight: 500, color: 'var(--red)', marginBottom: '20px'}}>
                 Мы отвечаем за:
             </Typography>
 

@@ -8,7 +8,7 @@ export const Banner = ({ router, isMobile }) => {
             id="root"
             sx={{
                 scrollMarginTop: '200px',
-                backgroundImage: 'url(/images/banner-3.jpg)',
+                backgroundImage: 'url(/images/banner-3.webp)',
                 backgroundPosition: 'center',
                 backgroundSize: 'cover',
                 height: '488px',

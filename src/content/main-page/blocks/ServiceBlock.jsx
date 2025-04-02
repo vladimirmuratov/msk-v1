@@ -14,7 +14,7 @@ export const ServiceBlock = () => {
         >
             <Typography
                 variant="h2"
-                sx={{fontSize: '32px', fontWeight: 500, color: 'var(--black)', marginBottom: '20px', lineHeight: 1.3}}>
+                sx={{fontSize: '32px', fontWeight: 500, color: 'var(--red)', marginBottom: '20px', lineHeight: 1.3}}>
                 Что мы предлагаем
             </Typography>
             <Box sx={{display: 'grid', gridTemplateColumns: {xs: '1fr', md: '1fr 1fr'}, gap: {xs: '16px', sm: '32px'}}}>
