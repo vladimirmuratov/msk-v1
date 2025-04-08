@@ -8,7 +8,7 @@ export const GreenBlock = () => {
                 backgroundColor: 'var(--blue)',
                 display: 'flex',
                 flexDirection: {xs: 'column', sm: 'row'},
-                justifyContent: 'space-between',
+                justifyContent: 'center',
                 alignItems: 'center',
                 gap: {xs: '40px', sm: '80px'},
                 padding: {xs: '20px', sm: '30px'},
@@ -22,7 +22,7 @@ export const GreenBlock = () => {
                     textAlign: {xs: 'center', sm: 'left'},
                     lineHeight: 1.3
                 }}>
-                Будьте уверены: в любой момент мы рядом с вами!
+                Будьте уверены: в любой момент мы рядом!
             </Typography>
         </Box>
     )

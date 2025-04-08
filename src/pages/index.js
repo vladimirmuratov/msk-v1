@@ -18,8 +18,8 @@ export default function Home() {
                 />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="yandex-verification" content="bbac592db0eece12" />
-                {/*<link rel="icon" href="/icon.png"/>*/}
                 <link rel="shortcut icon" href="/favicon.ico" type="image/ico" />
+                <link rel="canonical" href="https://msk-group-hospital.ru"/>
                 <meta property="og:locale" content="ru_RU" />
                 <meta property="og:title" content="Медицинская Сервисная Компания. Платная госпитализация в Москве. 8 (499) 719-81-00, 24/7" />
                 <meta property="og:description"

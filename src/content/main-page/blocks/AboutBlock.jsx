@@ -17,12 +17,18 @@ export const AboutBlock = () => {
                     О нас
                 </Typography>
                 <Typography sx={{ fontSize: '20px', color: 'var(--gray)' }}>
-                    <Box component="span" sx={{ fontWeight: 600, color: 'var(--blue)', }}>Медицинская Сервисная
-                        Компания</Box> берет
-                    на себя ответственность в организации экстренной и плановой госпитализации
-                    в передовые медицинские учреждения столицы, гарантируя для своих клиентов оперативный доступ к
+                    <Box component="span" sx={{ fontWeight: 500, color: 'var(--blue)', }}>Медицинская Сервисная
+                        Компания (МСК)</Box> берет
+                    на себя ответственность в организации <Box component="span"
+                                                               sx={{
+                                                                   fontWeight: 500,
+                                                                   color: 'var(--blue)',
+                                                               }}> экстренной
+                    и плановой госпитализации</Box> в передовые медицинские учреждения столицы, гарантируя для своих
+                    клиентов оперативный доступ к
                     лучшим практикам и комфорту. Осознавая критическую роль своевременного обращения за профессиональной
-                    помощью, мы обеспечиваем персональное сопровождение на протяжении всего пути от первого шага до
+                    помощью, мы обеспечиваем <Box component="span" sx={{ fontWeight: 500, color: 'var(--blue)', }}>персональное
+                    сопровождение</Box> на протяжении всего пути от первого шага до
                     успешной реабилитации.
                 </Typography>
                 <Typography sx={{ fontSize: '20px', color: 'var(--gray)', marginTop: '15px' }}>
@@ -35,7 +41,7 @@ export const AboutBlock = () => {
             </Box>
             <Box sx={{
                 // backgroundColor: 'var(--blue)',
-                display: {xs: 'flex', md: 'grid'},
+                display: { xs: 'flex', md: 'grid' },
                 gridTemplateColumns: { xs: '1fr', sm: '1fr 1fr' },
                 marginY: { xs: '15px', sm: '100px' },
                 alignItems: 'center',

@@ -1,4 +1,5 @@
 import { Box, Typography } from '@mui/material';
+import { FaHandshake, FaHeadset, FaMoneyCheckDollar, FaRegClock, FaUserDoctor } from 'react-icons/fa6';
 
 export const WhyWeBlock = () => {
     return (
@@ -11,21 +12,105 @@ export const WhyWeBlock = () => {
 
             <Typography variant="h2"
                         sx={{ fontSize: '32px', fontWeight: 500, color: 'var(--red)', marginBottom: '20px' }}>
-                Почему именно мы?
+                Почему стоит воспользоваться нашим сервисом для подбора медицинской клиники?
             </Typography>
 
-            <Typography sx={{ fontSize: '20px', color: 'var(--gray)', marginBottom: '5px' }}>
-                Наша компания специализируется на организации госпитализации в Москве и Московской области, обладая
-                детальной информацией о ведущих клиниках и лучших специалистах. Мы знаем, где доступны индивидуальные
-                палаты, какие стационары предоставляют услуги по вашему медицинскому профилю и как быстро организовать
-                госпитализацию в нужное учреждение.
+
+            <Typography
+                sx={{
+                    fontSize: { xs: 18, sm: 20 },
+                    color: 'var(--blue)',
+                    marginBottom: { xs: '10px', sm: '20px' }
+                }}
+            >
+                Выбор подходящего медицинского учреждения – ключевой момент на пути к восстановлению здоровья. Мы берем
+                на себя всю рутину и помогаем вам найти наилучший вариант, учитывая ваши индивидуальные требования и
+                ожидания.
             </Typography>
-            <Typography sx={{ fontSize: '20px', color: 'var(--gray)' }}>
-                Мы готовы помочь даже в сложных случаях, включая ситуации, когда пациент получил отказ в госпитализации
-                в других клиниках. У нас есть опыт работы с пожилыми пациентами, и мы понимаем все особенности их
-                госпитализации. Наша команда обеспечивает круглосуточное сопровождение и поддержку семь дней в неделю,
-                чтобы каждый пациент чувствовал себя в безопасности и комфорте.
-            </Typography>
+
+            <Box component="article"
+                 sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
+                <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                    <FaRegClock color="var(--red)" size={24} />
+                    <Typography variant="h3"
+                                sx={{ color: 'var(--blue)', fontSize: { xs: 20, sm: 24 }, fontWeight: 500 }}>
+                        Экономия ваших сил
+                    </Typography>
+                </Box>
+                <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 }, color: 'var(--gray)' }}>
+                    Больше не нужно тратить время на длительные поиски и анализировать неоднозначные отзывы. Мы подберем
+                    для вас надежные клиники и квалифицированных врачей — оперативно, точно и без лишних хлопот.
+                </Typography>
+            </Box>
+            <Box component="article"
+                 sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
+                <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                    <FaUserDoctor color="var(--red)" size={24} />
+                    <Typography variant="h3"
+                                sx={{ color: 'var(--blue)', fontSize: { xs: 20, sm: 24 }, fontWeight: 500 }}>
+                        Персонализированный подход
+                    </Typography>
+                </Box>
+                <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 }, color: 'var(--gray)' }}>
+                    Наши консультанты принимают во внимание все нюансы: поставленный диагноз, наличие сопутствующих
+                    проблем со здоровьем, ваши личные предпочтения и даже удобство расположения медицинского центра.
+                </Typography>
+            </Box>
+            <Box component="article"
+                 sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
+                <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                    <FaHeadset color="var(--red)" size={24} />
+                    <Typography variant="h3"
+                                sx={{ color: 'var(--blue)', fontSize: { xs: 20, sm: 24 }, fontWeight: 500 }}>
+                        Постоянная поддержка
+                    </Typography>
+                </Box>
+                <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 }, color: 'var(--gray)' }}>
+                    Мы оказываем помощь на каждом этапе: от первой консультации до записи на прием. Поможем с
+                    оформлением документов, расскажем о процессе лечения и ответим на любые ваши вопросы.
+                </Typography>
+            </Box>
+            <Box component="article"
+                 sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
+                <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                    <FaMoneyCheckDollar color="var(--red)" size={24} />
+                    <Typography variant="h3"
+                                sx={{ color: 'var(--blue)', fontSize: { xs: 20, sm: 24 }, fontWeight: 500 }}>
+                        Открытость и разумные цены
+                    </Typography>
+                </Box>
+                <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 }, color: 'var(--gray)' }}>
+                    Мы сотрудничаем с клиниками, предлагающими обоснованную ценовую политику, и заранее информируем о
+                    возможных дополнительных затратах. Полностью исключены скрытые платежи.
+                </Typography>
+            </Box>
+            <Box component="article"
+                 sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
+                <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                    <FaHandshake color="var(--red)" size={24} />
+                    <Typography variant="h3"
+                                sx={{ color: 'var(--blue)', fontSize: { xs: 20, sm: 24 }, fontWeight: 500 }}>
+                        Гарантия качества
+                    </Typography>
+                </Box>
+                <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 }, color: 'var(--gray)' }}>
+                    Мы сотрудничаем только с лицензированными и проверенными медицинскими организациями. Забота о вашем
+                    здоровье – наш главный приоритет.
+                </Typography>
+            </Box>
+            <Box>
+                <Typography
+                    sx={{
+                        fontSize: { xs: 20, sm: 22 },
+                        color: 'var(--red)',
+                        paddingTop: { xs: '10px', sm: '20px' }
+                    }}
+                >
+                    С нами вы можете быть уверены в правильности своего решения.<br />
+                    Оставьте заявку – и мы поможем вам начать путь к эффективному лечению.
+                </Typography>
+            </Box>
+
         </Box>
     );
 };
