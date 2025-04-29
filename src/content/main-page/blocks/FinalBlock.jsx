@@ -7,7 +7,7 @@ export const FinalBlock = () => {
             component="section"
             sx={{
                 backgroundColor: 'var(--blue)',
-                padding: {xs: '20px', sm: '30px'},
+                padding: {xs: '10px', sm: '30px'},
                 marginY: {xs: '25px', sm: '50px'}
             }}>
             <Typography

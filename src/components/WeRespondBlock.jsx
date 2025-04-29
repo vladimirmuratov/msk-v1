@@ -6,7 +6,7 @@ export const WeRespondBlock = () => {
         <Box
             sx={{
                 scrollMarginTop: '150px',
-                padding: {xs: '18px 20px 20px', sm: '18px 30px 50px'},
+                padding: {xs: '18px 10px 20px', sm: '18px 30px 50px'},
             }}
         >
 

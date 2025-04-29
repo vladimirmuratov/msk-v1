@@ -6,7 +6,7 @@ export const WhyWeBlock = () => {
         <Box
             sx={{
                 scrollMarginTop: '150px',
-                padding: { xs: '18px 20px 20px', sm: '18px 30px 50px' },
+                padding: { xs: '18px 10px 20px', sm: '18px 30px 50px' },
             }}
         >
 
@@ -100,14 +100,19 @@ export const WhyWeBlock = () => {
             </Box>
             <Box>
                 <Typography
+                    variant="h3"
                     sx={{
-                        fontSize: { xs: 20, sm: 22 },
+                        fontSize: { xs: 22, sm: 24 },
                         color: 'var(--red)',
-                        paddingTop: { xs: '10px', sm: '20px' }
+                        paddingTop: { xs: '10px', sm: '20px' },
+                        textAlign: 'center',
+                        fontStyle: 'italic',
+                        textWrap: 'balance',
+                        lineHeight: 1.5
                     }}
                 >
-                    С нами вы можете быть уверены в правильности своего решения.<br />
-                    Оставьте заявку – и мы поможем вам начать путь к эффективному лечению.
+                    Мы подбираем клинику и специалиста с учетом конкретного запроса, обеспечивая быструю госпитализацию
+                    и оптимальные условия лечения в ведущих медицинских центрах Москвы.
                 </Typography>
             </Box>
 

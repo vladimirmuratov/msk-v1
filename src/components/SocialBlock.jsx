@@ -1,9 +1,9 @@
-import React from 'react'
-import {Box, Link} from '@mui/material'
-import Image from 'next/image'
+import React from 'react';
+import { Box, Link } from '@mui/material';
+import Image from 'next/image';
 import { email, phoneTelegram, phoneWhatsApp } from '@/config';
 
-const SocialBlock = ({className = ''}) => {
+const SocialBlock = ({ className = '' }) => {
     return (
         <Box
             className={className}
@@ -12,9 +12,17 @@ const SocialBlock = ({className = ''}) => {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'space-between',
-                gap: '10px',
+                gap: '15px',
             }}
         >
+            {/*<Link href={`viber://add?number=${phoneViber}`}>
+                <Image
+                    src="/images/social/viber.svg"
+                    alt="icon"
+                    width={30}
+                    height={30}
+                />
+            </Link>*/}
             <Link target="_blank" href={`https://wa.me/${phoneWhatsApp}`}>
                 <Image
                     src="/images/social/whatsapp.svg"
@@ -31,14 +39,6 @@ const SocialBlock = ({className = ''}) => {
                     height={30}
                 />
             </Link>
-            {/*<Link href={`viber://add?number=${phoneViber}`}>
-                <Image
-                    src="/images/social/viber.svg"
-                    alt="icon"
-                    width={30}
-                    height={30}
-                />
-            </Link>*/}
             <Link href={`mailto:${email}`}>
                 <Image
                     src="/images/social/email.svg"
@@ -48,7 +48,7 @@ const SocialBlock = ({className = ''}) => {
                 />
             </Link>
         </Box>
-    )
-}
+    );
+};
 
-export default React.memo(SocialBlock)
+export default React.memo(SocialBlock);

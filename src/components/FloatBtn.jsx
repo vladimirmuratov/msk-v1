@@ -1,5 +1,5 @@
 import { Fab } from '@mui/material';
-import CreateOutlinedIcon from '@mui/icons-material/CreateOutlined';
+import PhoneEnabledOutlinedIcon from '@mui/icons-material/PhoneEnabledOutlined';
 
 export const FloatBtn = ({ handleOpen }) => {
     return (
@@ -12,7 +12,7 @@ export const FloatBtn = ({ handleOpen }) => {
                 bottom: { xs: '10px', sm: '30px', md: '50px' },
                 right: { xs: '10px', sm: '30px', md: '50px' }
             }}>
-            <CreateOutlinedIcon />
+            <PhoneEnabledOutlinedIcon />
             <span className="pulse-button__rings"></span>
             <span className="pulse-button__rings"></span>
             <span className="pulse-button__rings"></span>

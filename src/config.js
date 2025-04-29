@@ -5,6 +5,8 @@ import MapOutlinedIcon from '@mui/icons-material/MapOutlined';
 import LiveHelpOutlinedIcon from '@mui/icons-material/LiveHelpOutlined';
 
 export const phoneNumber = '+7 499 719 81 00';
+export const phoneNumber2 = '+7 925 179-97-86';
+
 export const email = 'moscowsc.post@yandex.ru';
 
 export const phoneWhatsApp = '+79268158505';
