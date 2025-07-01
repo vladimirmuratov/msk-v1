@@ -7,6 +7,7 @@ export default function Document(props) {
             <Head>
                 <DocumentHeadTags {...props} />
                 <meta name="yandex-verification" content="bbac592db0eece12" />
+                <title>Медицинская Сервисная Компания. Срочная платная госпитализация в Москве — помощь без ожидания. 8 (499) 719-81-00, 24/7</title>
                 <meta
                     name="description"
                     content="Госпитализация в ведущие столичные клиники в кратчайшие сроки. Помощь при острых и хронических состояниях. Работаем с частными и государственными учреждениями."
