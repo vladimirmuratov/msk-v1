@@ -31,6 +31,8 @@ export default function Document(props) {
                 <meta property="og:image:type" content="image/webp" />
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Все лучшие клиники Москвы в одном месте. Платная госпитализация. 8 (499) 719-81-00, 24/7" />
+                <script type="text/javascript">window._ab_id_=160560</script>
+                <script src="https://cdn.botfaqtor.ru/one.js"></script>
             </Head>
             <body>
             <Main />
