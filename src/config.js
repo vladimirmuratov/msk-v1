@@ -4,8 +4,8 @@ import SupportAgentOutlinedIcon from '@mui/icons-material/SupportAgentOutlined';
 import MapOutlinedIcon from '@mui/icons-material/MapOutlined';
 import LiveHelpOutlinedIcon from '@mui/icons-material/LiveHelpOutlined';
 
-export const phoneNumber = '+7 499 719 81 00';
-export const phoneNumber2 = '+7 926 388 48 81';
+export const phoneNumber = '+7 (499) 719-81-00';
+export const phoneNumber2 = '+7 (926) 388-48-81';
 
 export const email = 'moscowsc.post@yandex.ru';
 

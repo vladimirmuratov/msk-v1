@@ -16,6 +16,8 @@ import { FinalBlock } from '@/content/main-page/blocks/FinalBlock';
 import { WhyWeBlock } from '@/components/WhyWeBlock';
 import { WeRespondBlock } from '@/components/WeRespondBlock';
 import { BaseAccordion } from '@/components/base/Accordion/BaseAccordion';
+import { FearBlock } from '@/components/FearBlock';
+import { BaseCallBlock } from '@/components/base/BaseCallBlock';
 
 export const MainPageContent = () => {
     const router = useRouter();
@@ -65,10 +67,13 @@ export const MainPageContent = () => {
             <BannerCardsBlock />
             <AboutBlock />
             <WhyWeBlock />
+            <FearBlock />
             <GreenBlock />
+            <BaseCallBlock />
             <WeRespondBlock />
             <ServiceBlock />
             <BaseAccordion id="faq" title="Частые вопросы" items={faq} />
+            <BaseCallBlock />
             <FinalBlock />
             <ContactsBlock />
             <FloatBtn handleOpen={handleOpenForm} />
