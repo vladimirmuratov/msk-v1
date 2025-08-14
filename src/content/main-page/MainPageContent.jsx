@@ -69,7 +69,7 @@ export const MainPageContent = () => {
             <WhyWeBlock />
             <FearBlock />
             <GreenBlock />
-            <BaseCallBlock />
+            <BaseCallBlock text='Ответим на любые вопросы по госпитализации и лечению. Звоните!' />
             <WeRespondBlock />
             <ServiceBlock />
             <BaseAccordion id="faq" title="Частые вопросы" items={faq} />

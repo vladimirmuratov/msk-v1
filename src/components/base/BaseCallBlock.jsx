@@ -22,6 +22,8 @@ export const BaseCallBlock = memo(({ text = 'Запись на консульт�
                     fontStyle: 'italic',
                     textAlign: 'center',
                     textWrap: 'balance',
+                    fontWeight: 500,
+                    fontSize: { xs: 22, sm: 28, md: 32 },
                 }}
             >
                 {text}
