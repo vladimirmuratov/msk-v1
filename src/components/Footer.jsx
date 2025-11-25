@@ -41,7 +41,7 @@ export const Footer = () => {
                 flexDirection: 'column',
                 alignItems: { xs: 'center', sm: 'flex-end' }
             }}>
-                <Typography sx={{ fontSize: '14px' }}>г. Москва, Мичуринский пр-т, д. 6</Typography>
+                {/*<Typography sx={{ fontSize: '14px' }}>г. Москва, Мичуринский пр-т, д. 6</Typography>*/}
                 <Link href={`tel:${phoneNumber}`} sx={{ color: 'var(--white)', textDecoration: 'underline' }}>
                     <Typography sx={{ fontSize: { xs: '12px', sm: '16px' }, }}>{phoneNumber}</Typography>
                 </Link>

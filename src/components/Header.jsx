@@ -37,10 +37,15 @@ export const Header = ({ toggleDrawer, router }) => {
                 padding: { xs: '10px', sm: '10px 30px' },
                 flexDirection: { xs: 'column', sm: 'row' },
                 justifyContent: 'space-between',
+                alignItems: 'center',
                 color: 'var(--white)',
             }}>
-                <Typography sx={{ fontSize: { xs: '12px', sm: '16px' }, }}>
+                {/*<Typography sx={{ fontSize: { xs: '12px', sm: '16px' }, }}>
                     г. Москва, Мичуринский пр-т, д.6
+                </Typography>*/}
+
+                <Typography sx={{ fontSize: { xs: '12px', sm: '16px' }, }}>
+                    Круглосуточно, 24/7
                 </Typography>
 
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
