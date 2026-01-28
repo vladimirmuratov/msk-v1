@@ -6,8 +6,7 @@ export default function Document(props) {
         <Html lang="en" prefix="og: https://ogp.me/ns#">
             <Head>
                 <DocumentHeadTags {...props} />
-                {/*<meta name="yandex-verification" content="bbac592db0eece12" />*/} {/*https://msk-emergency.ru*/}
-                <meta name="yandex-verification" content="7827291a3cf86fb6" /> {/*https://msk-emergency.vercel.app*/}
+                <meta name="yandex-verification" content="bbac592db0eece12" />
                 <title>Все лучшие клиники Москвы в одном месте. Платная госпитализация. 8 (499) 719-81-00, 24/7</title>
                 <meta
                     name="description"
